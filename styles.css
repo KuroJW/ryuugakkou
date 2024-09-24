@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+
 :root
 {
     --background-page: #FFF0F5;
     --background-color-hd: #E0FFFF;
     --background-color-ft: #FAFAD2;
     --font-color: #000000;
+    --font--japanese: "Shippori Mincho", serif;
 }
 
 body
@@ -34,7 +37,9 @@ p
 .hd-title
 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: normal;
+    font-family: var(--font--japanese);
 }
 
 .hd-content
@@ -48,7 +53,7 @@ p
 
 .sc-title-1 
 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 35px;
     margin: 30px;
 }
@@ -81,3 +86,93 @@ p
     font-size: 15px;
     gap: 20px;
 }
+
+/*
+
+    body
+{
+    background-color: var(--background-page);
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.hide
+{
+    display: none;
+}
+
+.hd-title
+{
+    font-weight: 700;
+}
+
+.hd-container
+{
+    background-color: var(--background-color-hd);
+}
+
+*/
+
+
+/*
+    @media screen and (min-width: 375px)
+{
+    .hd-container
+    {
+        width: 100%;
+        height: 60px;
+        align-content: center;
+        display: flex;
+    }
+
+    .hd-title
+    {
+        margin: 20px;
+    }
+
+    .hd-content-bt
+    {
+        background-color: transparent;
+        border-color: transparent;
+        position: fixed;
+    }
+
+    .hd-content
+    {
+        display: block;
+        background-color: var(--background-color-hd);
+        position: absolute;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .bt-img
+    {
+        width: 30px;
+    }
+
+    .sc-container-1
+    {
+        display: flex;
+    }
+
+    .sc-container-1-img
+    {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    
+}
+
+@media screen and (min-width: 1728px)
+{
+    
+}
+*/
