@@ -9,170 +9,114 @@
     --font--japanese: "Shippori Mincho", serif;
 }
 
-body
-{
-    background-color: var(--background-page);
-}
+/* 
+    Responsividade para texto: A cada 16px equivale a 1 rem.
+    Responsividade para outras coisas: Se usa porcentagem (%).
+*/
 
-a
+header
 {
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-p
-{
-    font-size: 18px;
-    margin: 0em 0em 1em 2em;
-}
-
-.hd-container
-{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    align-items: center;
     background-color: var(--background-color-hd);
+}
+
+a:link, a:visited
+{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+ul:hover
+{
+    background-color: rgb(0, 255, 21);
+    border-radius: 5% 5%;
+}
+
+button
+{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+
+.hd-div
+{
+    display: flex;
+    align-items: center;
+}
+
+.hd-nav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.hd-opc-menu
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 25%;
 }
 
 .hd-title
 {
-    font-size: 30px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: var(--font--japanese);
+    width: max-content; /* Define a largura máxima ao tamanho do elemento */
+    height: max-content; /* Define a altura máxima ao tamanho do elemento*/
+    font-size: 200%;
 }
 
-.hd-content
+.bt-icon
 {
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    margin-right: 20px;
-    gap: 40px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color: white;
 }
 
-.sc-title-1 
+.menu
 {
-    font-weight: 400;
-    font-size: 35px;
-    margin: 30px;
+    display: block;
+    position: relative;
+    font-size: 130%;
 }
 
-.sc-container-1
+#menu-info, #menu-lvl, #opc
+{   
+    position: absolute;
+    width: auto;
+}
+
+.div-login
 {
-    display: flex;
-    width: 700px;
-    height: 350px;
-    margin-left: 3em;
+    border: 2px solid black;
+    text-align: center;
 }
 
-.sc-content-1
+#opc
 {
-    display: flex;
-    flex-direction: column;
+    margin-left:1.5% ;
 }
 
-.ft-container
+#menu-lvl
 {
-    background-color: var(--background-color-ft);
-    padding: 20px;
-    margin-top: 5em;
+    width: 2.5%;
+    text-align: center;
 }
 
-.ft-content
-{
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    gap: 20px;
-}
-
-/*
-
-    body
-{
-    background-color: var(--background-page);
-}
-
-a
-{
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-.hide
+.ocultar
 {
     display: none;
 }
 
-.hd-title
+.jp-lvl
 {
-    font-weight: 700;
+    font-size: 130%;
+    margin-top: 20%;
 }
-
-.hd-container
-{
-    background-color: var(--background-color-hd);
-}
-
-*/
-
-
-/*
-    @media screen and (min-width: 375px)
-{
-    .hd-container
-    {
-        width: 100%;
-        height: 60px;
-        align-content: center;
-        display: flex;
-    }
-
-    .hd-title
-    {
-        margin: 20px;
-    }
-
-    .hd-content-bt
-    {
-        background-color: transparent;
-        border-color: transparent;
-        position: fixed;
-    }
-
-    .hd-content
-    {
-        display: block;
-        background-color: var(--background-color-hd);
-        position: absolute;
-        margin: 60px 0px 0px 0px;
-    }
-
-    .bt-img
-    {
-        width: 30px;
-    }
-
-    .sc-container-1
-    {
-        display: flex;
-    }
-
-    .sc-container-1-img
-    {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media screen and (min-width: 1024px)
-{
-    
-}
-
-@media screen and (min-width: 1728px)
-{
-    
-}
-*/

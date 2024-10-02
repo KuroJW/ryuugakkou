@@ -1,8 +1,15 @@
-function Menu()
+function BtLvl() 
 {
-    var menuBt = document.getElementById("menu-list");
-
-    menuBt.classList.toggle("hide");
+    document.getElementById("menu-lvl").classList.toggle("ocultar");
 }
 
-// "Toglle" do inglês, significa "Alternar", neste caso ao clicar no bot]ao vai remover a classe, e ao clicar novamente irá adicionar a classe
+function BtInfo() 
+{
+    document.getElementById("menu-info").classList.toggle("ocultar");
+    
+}
+
+function Login() 
+{
+    document.getElementById("opc").classList.toggle("ocultar");
+}

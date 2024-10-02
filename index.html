@@ -1,57 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="shiba-inu.png" type="image/x-icon">
     <script src="script.js" defer></script>
-    <title>りゅう学校</title>
+    <title>D.</title>
 </head>
 <body>
-    <header class="hd-container">
-        
-        <div class="hd-container">
-            <label class="hd-title">りゅう学校</label>
-        </div>
-
-        <div  id="menu-list" class="hide"></div>
-            <ol class="hd-content">
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Aprenda japonês</a></li>
-                <li><a href="#">Dicionário</a></li>
-                <li><a href="#">Sobre nós</a></li>
-            </ol>
-        </div>
-        
-    </header>
     
-    <section>
-
-        <h1 class="sc-title-1">Objetivo da <span>りゅう学校</span></h1>
-        <div class="sc-container-1">
-            <img src="templo-japones.avif" class="sc-container-1-img" alt="Templo Japonês com árvores de sakura em volta">
-            <div class="sc-content-1">
-                <p>A Ryuu Gakkou tem como objetivo levar um pouco da cultura e língua japonesa para aqueles que não tem condições de ter acesso a conteúdo pago.</p>
-            </div>
-            
+    <header>
+        <div class="hd-div">
+            <img src="Imagens/japan.png">
+            <h1>日本語の将軍</h1>
         </div>
+        
+        <nav class="hd-nav">
+            <div class="hd-opc-menu">
+                <div class="hd-div-level">
+                    <button onclick="BtLvl()" type="menu" class="menu">Níveis</button>
+                    <ol class="ocultar" id="menu-lvl">
+                        <ul class="jp-lvl"><a href="#">N5</a></ul> 
+                        <ul class="jp-lvl"><a href="#">N4</a></ul>
+                        <ul class="jp-lvl"><a href="#">N3</a></ul>
+                        <ul class="jp-lvl"><a href="#">N2</a></ul>
+                        <ul class="jp-lvl"><a href="#">N1</a></ul>
+                    </ol> 
+                </div>
 
-    </section>
+                <div class="hd-div-level">
+                    <button onclick="BtInfo()" type="menu" class="menu">Informações</button>
+                    <ol class="ocultar" id="menu-info">
+                        <ul class="jp-lvl"><a href="#">Quem nós somos</a></ul> 
+                        <ul class="jp-lvl"><a href="#">Contato</a></ul>
+                        <ul class="jp-lvl"><a href="#">Cursos</a></ul>
+                        <ul class="jp-lvl"><a href="#">Grupos</a></ul>
+                    </ol> 
+                </div>
+                
+            </div>
 
-    <footer class="ft-container">
+            <div class="div-login">
+                <button onclick="Login()" type="menu" class="menu"><img src="Imagens/user-login.png" class="bt-icon"></button>
+                <ol class="ocultar" id="opc">
+                    <ul class="jp-lvl"><a href="#">Entrar</a></ul>
+                    <ul class="jp-lvl"><a href="#">Cadastrar</a></ul>
+                </ol>
+            </div>
 
-        <ol class="ft-content">
-            <li><a href="#">Nihongo no Mori</a></li>
-            <li><a href="#">Meshclass Nihongo</a></li>
-            <li><a href="#">Onomappu</a></li>
-            <li><a href="#">Fale em Japonês</a></li>
-            <li><a href="#">Japonês Online</a></li>
-            <li><a href="#">Japanichiwa</a></li>
+        </nav>
+    </header>
 
-        </ol>
+    <main>
 
-    </footer>
+    </main>
+
 </body>
 </html>
