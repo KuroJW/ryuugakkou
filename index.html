@@ -11,42 +11,48 @@
 <body>
     
     <header>
-        <div class="hd-div">
+        <div class="header-div-title">
             <img src="Imagens/japan.png">
             <h1>日本語の将軍</h1>
         </div>
         
-        <nav class="hd-nav">
-            <div class="hd-opc-menu">
-                <div class="hd-div-level">
-                    <button onclick="BtLvl()" type="menu" class="menu">Níveis</button>
-                    <ol class="ocultar" id="menu-lvl">
-                        <ul class="jp-lvl"><a href="#">N5</a></ul> 
-                        <ul class="jp-lvl"><a href="#">N4</a></ul>
-                        <ul class="jp-lvl"><a href="#">N3</a></ul>
-                        <ul class="jp-lvl"><a href="#">N2</a></ul>
-                        <ul class="jp-lvl"><a href="#">N1</a></ul>
-                    </ol> 
+        <nav class="header-nav">
+            <div class="header-nav-container-menu">
+                <div class="header-nav-content-menu">
+                    <button type="menu" id="Nivel-jp">Níveis</button>
+                    <div class="menu-alinhamento">
+                        <ol id="Nivel-jp-opc">
+                            <li class="menu-opc-jp"><a class="menu-link" href="#">N4</a></li>
+                            <li class="menu-opc-jp"><a class="menu-link" href="#">N3</a></li>
+                            <li class="menu-opc-jp"><a class="menu-link" href="#">N5</a></li> 
+                            <li class="menu-opc-jp"><a class="menu-link" href="#">N2</a></li>
+                            <li class="menu-opc-jp"><a class="menu-link" href="#">N1</a></li>
+                        </ol> 
+                    </div>
                 </div>
 
-                <div class="hd-div-level">
-                    <button onclick="BtInfo()" type="menu" class="menu">Informações</button>
-                    <ol class="ocultar" id="menu-info">
-                        <ul class="jp-lvl"><a href="#">Quem nós somos</a></ul> 
-                        <ul class="jp-lvl"><a href="#">Contato</a></ul>
-                        <ul class="jp-lvl"><a href="#">Cursos</a></ul>
-                        <ul class="jp-lvl"><a href="#">Grupos</a></ul>
-                    </ol> 
+                <div>
+                    <button type="menu" id="Menu-info">Informações</button>
+                    <div class="menu-alinhamento">
+                        <ol id="Menu-info-opc">
+                            <li class="menu-opc-info"><a class="menu-link" href="#">Grupos</a></li>
+                            <li class="menu-opc-info"><a class="menu-link" href="#">Quem nós somos</a></li> 
+                            <li class="menu-opc-info"><a class="menu-link" href="#">Contato</a></li>
+                            <li class="menu-opc-info"><a class="menu-link" href="#">Cursos</a></li>
+                        </ol> 
+                    </div>
                 </div>
                 
             </div>
 
-            <div class="div-login">
-                <button onclick="Login()" type="menu" class="menu"><img src="Imagens/user-login.png" class="bt-icon"></button>
-                <ol class="ocultar" id="opc">
-                    <ul class="jp-lvl"><a href="#">Entrar</a></ul>
-                    <ul class="jp-lvl"><a href="#">Cadastrar</a></ul>
-                </ol>
+            <div class="header-nav-content-menu">
+                <button type="button" id="Login">Login</button>
+                <div class="menu-alinhamento">
+                    <ol id="Login-opc">
+                        <li class="login-opc"><a class="menu-link" href="#">Entrar</a></li>
+                        <li class="login-opc"><a class="menu-link" href="#">Cadastrar</a></li>
+                    </ol>
+                </div>
             </div>
 
         </nav>

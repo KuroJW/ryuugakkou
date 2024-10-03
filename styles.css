@@ -1,122 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
-
+/* 
+    Responsividade para texto: A cada 16px equivale a 1 rem.
+    Responsividade para outras coisas: Se usa porcentagem (%).
+*/
 :root
 {
     --background-page: #FFF0F5;
     --background-color-hd: #E0FFFF;
+    --background-color-bt: #3fa1fc;
     --background-color-ft: #FAFAD2;
     --font-color: #000000;
     --font--japanese: "Shippori Mincho", serif;
 }
 
-/* 
-    Responsividade para texto: A cada 16px equivale a 1 rem.
-    Responsividade para outras coisas: Se usa porcentagem (%).
-*/
-
 header
 {
     display: flex;
-    justify-content: space-between;
-    padding: 0.5%;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--background-color-hd);
 }
 
-a:link, a:visited
+a
 {
-    color: black;
-    background-color: transparent;
     text-decoration: none;
 }
 
-ul:hover
+
+li
 {
-    background-color: rgb(0, 255, 21);
-    border-radius: 5% 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
 }
 
-button
+
+.header-div-title
 {
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav
+{
+    display: flex;
+}
+
+.header-nav-container-menu
+{
+    display: flex;
+    margin: 0 4rem;
+}
+
+.header-nav-content-menu
+{
+    margin: 0 4rem;
+}
+
+#Login
+{
+    background-color: var(--background-color-bt);
+}
+
+#Nivel-jp, #Menu-info
+{
+    background-color: aquamarine;
+}
+
+#Nivel-jp, #Menu-info, #Login
+{
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
     cursor: pointer;
-    border: none;
+}
+
+#Nivel-jp-opc, #Menu-info-opc, #Login-opc
+{
+    display: none; /*Esconde a lista inicialmente*/ 
+    position: absolute;
+    cursor: pointer;
+}
+
+#Nivel-jp-opc, #Menu-info-opc
+{
+    background-color: var(--background-color-ft);
+    border-radius: 0.4rem;
+    border: 0.1rem solid black;
+}
+
+.menu-opc-jp
+{
+    width: 5rem;
+    height: 1rem;
+    margin: 0.3rem 0;
+}
+
+.menu-opc-info
+{
+    width: 9.3rem;
+}
+
+.menu-opc-jp:hover, .menu-opc-info:hover
+{
+    background-color: aquamarine;
+    border-radius: 0.4rem;
 }
 
 
-.hd-div
+.menu-alinhamento
 {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.hd-nav
+.menu-link
 {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
 }
 
-.hd-opc-menu
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 25%;
-}
+/*
 
-.hd-title
-{
-    width: max-content; /* Define a largura máxima ao tamanho do elemento */
-    height: max-content; /* Define a altura máxima ao tamanho do elemento*/
-    font-size: 200%;
-}
-
-.bt-icon
-{
-    width: 30%;
-    border: 2px solid black;
-    border-radius: 100%;
-    background-color: white;
-}
-
-.menu
+#Nivel-jp, #Menu-info, #Login
 {
     display: block;
     position: relative;
-    font-size: 130%;
 }
 
-#menu-info, #menu-lvl, #opc
-{   
-    position: absolute;
-    width: auto;
-}
+*/
 
-.div-login
-{
-    border: 2px solid black;
-    text-align: center;
-}
-
-#opc
-{
-    margin-left:1.5% ;
-}
-
-#menu-lvl
-{
-    width: 2.5%;
-    text-align: center;
-}
-
-.ocultar
-{
-    display: none;
-}
-
-.jp-lvl
-{
-    font-size: 130%;
-    margin-top: 20%;
-}

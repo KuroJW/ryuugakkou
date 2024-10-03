@@ -1,0 +1,4 @@
+Padrões dos ID's do HTML/CSS:
+
+- Inicial sempre maiúscula (Exemplo: id="Menu")
+- caso sejam duas ou mais palavras, somente a primeira será maiúscula e entre as palavras haverá um traço (Exemplo: id="Nivel-jp")
