@@ -58,32 +58,5 @@ document.addEventListener
                         }
                 );
 
-                const Login = document.getElementById('Login');
-                const Login_opc = document.getElementById('Login-opc');
-
-                Login.addEventListener
-                (
-                    'click', (event) => 
-                        {
-                            event.stopPropagation(); // Impede que o clique no botão feche o menu
-                            Login_opc.style.display = Login_opc.style.display === 'block' ? 'none' : 'block';
-                        }
-                );
-
-                document.addEventListener
-                (
-                    'click', () => 
-                        {
-                            Login_opc.style.display = 'none'; // Fecha o menu se clicar fora dele
-                        }
-                );
-
-                Login_opc.addEventListener
-                (
-                    'click', (event) => 
-                        {
-                            event.stopPropagation(); // Impede que o clique na lista feche o menu
-                        }
-                );
             }
     );

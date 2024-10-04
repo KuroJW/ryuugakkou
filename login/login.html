@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <form method="get" name="login" class="form-login" id="Form-login">
+        <label>Usuário</label>
+        <input type="email" required>
+        <label>Senha</label>
+        <input type="password" required>
+        <button type="submit">Entrar</button>
+        <a id="Cadastrar" href="#">Não possui um conta? Clique aqui e cadastre-se.</a>
+    </form>
+
+    <form method="get" name="cadastro" class="form-cadastro" id="Form-cadastro">
+        <div>
+            <label>Usuário</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label>Repita seu E-mail</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label>Senha</label>
+            <input type="password" required>
+        </div>
+        <div>
+            <label>Repita sua Senha</label>
+            <input type="password" required>
+        </div>
+        <button type="submit">Cadastrar</button>
+        <a id="Entrar" href="#">Já possui uma conta? Clique aqui é entre.</a>
+    </form>
+</body>
+</html>
